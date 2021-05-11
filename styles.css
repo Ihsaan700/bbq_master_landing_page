@@ -61,6 +61,8 @@ strong {
 .intro {
     background-color: #404040;
     background-image: url(/images/dark-ribs.jpg);
+    background-size: cover;
+    background-position: center;
     padding: 0 .5em 2em;
     display: flex;
     flex-direction: column;
@@ -76,3 +78,29 @@ strong {
     padding: 2em 1em;
 }
 
+/* media queries */
+
+@media (min-width: 670px) {
+    body {
+        font-size: 1.125rem;
+    }
+
+    .container {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+    }
+}
