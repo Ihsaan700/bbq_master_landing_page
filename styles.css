@@ -89,6 +89,38 @@ strong {
     margin-right: auto;
 }
 
+/* email form */
+
+.email-collector {
+    /* border: 3px solid red; */
+    width: 80%;
+    max-width: 300px;
+}
+
+input,
+.button {
+    width: 100%;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+input {
+    text-align: inherit;
+    border: 1px solid #404040;
+    margin-bottom: .75em;
+    padding: .25em;
+}
+
+.button {
+    display: inline-block;
+    background-image: linear-gradient(to right, orange, red);
+    border: 0;
+    color: white;
+    padding: .25em 1.5em;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+}
+
 /* media queries */
 
 @media (min-width: 670px) {
