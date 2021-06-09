@@ -109,6 +109,11 @@ input {
     border: 1px solid #404040;
     margin-bottom: .75em;
     padding: 0.25em;
+    transition: 150ms;
+}
+
+input:focus {
+    transform: scale(1.05);
 }
 
 .button {
@@ -122,11 +127,13 @@ input {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-    transition: color 150ms;
+    transition: color, transform 150ms;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     color: black;
+    transform: scale(1.05);
 }
 
 /* media queries */
